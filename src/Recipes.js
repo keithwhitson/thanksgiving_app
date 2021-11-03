@@ -95,8 +95,7 @@ export const Recipes = () => {
                 </div>
 
                 <div className="uri">
-                    <p><b>uri: </b></p>
-                    <p>{data.uri}</p>
+                <p><a href={data.uri} target="_blank" >uri</a></p>
                 </div>
 
 
