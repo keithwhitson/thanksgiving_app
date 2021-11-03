@@ -35,6 +35,74 @@ export const Recipes = () => {
                     return <p>{item}</p>;
                 })}
                 </div>
+
+                <div className="cautions">
+                <p><b>Cautions: </b></p>
+                {data.cautions.map(item => {
+                    return <p>{item}</p>;
+                })}
+                </div>
+
+                <div className="cuisine-type">
+                <p><b>Cuisine Type: </b></p>
+                {data.cuisineType.map(item => {
+                    return <p>{item}</p>;
+                })}
+                </div>
+
+                <div className="diet-labels">
+                <p><b>Diet Labels: </b></p>
+                {data.dietLabels.map(item => {
+                    return <p>{item}</p>;
+                })}
+                </div>
+
+                <div className="health-labels">
+                <p><b>Health Labels: </b></p>
+                {data.healthLabels.map(item => {
+                    return <p>{item}</p>;
+                })}
+                </div>
+
+                <div className="ingredients">
+                <p><b>Ingredient Lines: </b></p>
+                {data.ingredientLines.map(item => {
+                    return <p>{item}</p>;
+                })}
+                </div>
+
+
+                <div className="meal-type">
+                <p><b>Meal Type: </b></p>
+                {data.mealType.map(item => {
+                    return <p>{item}</p>;
+                })}
+                </div>
+
+
+                <div className="share-as">
+                    <p><a href={data.shareAs}>Share As</a></p>
+                </div>
+
+                <div className="total-time">
+                    <p><b>Total Time: </b></p>
+                    <p>{data.totalTime}</p>
+                </div>
+
+                <div className="total-weight">
+                    <p><b>Total Weight: </b></p>
+                    <p>{data.totalWeight}</p>
+                </div>
+
+                <div className="uri">
+                    <p><b>uri: </b></p>
+                    <p>{data.uri}</p>
+                </div>
+
+
+
+
+
               </div>
             );
           })}
