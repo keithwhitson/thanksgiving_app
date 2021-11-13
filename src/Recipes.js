@@ -11,7 +11,7 @@ export const Recipes = () => {
               <div key={key}>
 
                 <div className="image">
-                    <img src={data.image} width="700" height="700" />
+                    <img src={data.image} alt="" width="700" height="700" />
                 </div>
                 
                 <div className="label">
@@ -95,7 +95,7 @@ export const Recipes = () => {
                 </div>
 
                 <div className="uri">
-                <p><a href={data.uri} target="_blank" >uri</a></p>
+                <p><a href={data.uri} target="_blank" rel="noreferrer">uri</a></p>
                 </div>
 
 
