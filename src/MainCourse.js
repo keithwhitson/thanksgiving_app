@@ -22,7 +22,7 @@ const MainCourse = () => {
               return (
                 <div key={key}>
                   <div className="image">
-                        <Card image={data.image} title={data.label}/>
+                        <Card image={data.image} title={data.label} ingredientsList={data.ingredientsList}/>
                   </div>
                 </div>
               );

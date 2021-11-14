@@ -38,7 +38,7 @@ const Drinks = () => {
               return (
                 <div key={key}>
                   <div className="drink">
-                        <Card image={data.image} title={data.label}/>
+                  <Card image={data.image} title={data.label} ingredientsList={data.ingredientsList}/>
                   </div>
                   {console.log(data.dishType)}
                 </div>

@@ -11,6 +11,7 @@ import Hello from "./Hello"
 import MainCourse from "./MainCourse"
 import Starters from "./Starters"
 import Navbar from "./NavBar"
+import WholeRecipe from './WholeRecipe';
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/starters">
             <Starters />
+          </Route>
+          <Route path="/wholerecipe">
+            <WholeRecipe />
           </Route>
         </Switch>
       </div>
