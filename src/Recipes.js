@@ -2,11 +2,13 @@ import React from "react";
 import "./App.css";
 import {recipeInfo} from "./recipe_info"
 
-export const Recipes = () => {
+const Recipes = () => {
+    
     return (
       <>
         <div className="stock-container">
-          {recipeInfo.map((data, key) => {
+
+          {recipeInfo.filter((item, index) => index < 1).map((data, key) => {
             return (
               <div key={key}>
 
@@ -98,10 +100,6 @@ export const Recipes = () => {
                 <p><a href={data.uri} target="_blank" rel="noreferrer">uri</a></p>
                 </div>
 
-
-
-
-
               </div>
             );
           })}
@@ -109,3 +107,5 @@ export const Recipes = () => {
       </>
     );
   };
+
+export default Recipes
