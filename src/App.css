@@ -50,3 +50,8 @@ h1{
   margin: auto;
   width: 90%;
 }
+
+.cards{
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import "./App.css";
 import {recipeInfo} from "./recipe_info"
 
 const Recipes = () => {
@@ -8,7 +7,7 @@ const Recipes = () => {
       <>
         <div className="stock-container">
 
-          {recipeInfo.filter((item, index) => index < 1).map((data, key) => {
+          {recipeInfo.filter((item, index) => index < 5).map((data, key) => {
             return (
               <div key={key}>
 

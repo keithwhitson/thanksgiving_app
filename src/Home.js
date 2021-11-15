@@ -5,7 +5,7 @@ function Home() {
     return (
         <div>
             <h1 className="text-center">Home</h1>
-            <img style={{float: 'middle'}} className="center" src="https://upload.wikimedia.org/wikipedia/commons/1/11/RoastTurkey.jpg" alt="turkey picture" width="512" height="" />
+            <img style={{float: 'middle'}} className="center" src="https://upload.wikimedia.org/wikipedia/commons/1/11/RoastTurkey.jpg" alt="turkey picture" width="200" height="" />
         </div>
     );
   }

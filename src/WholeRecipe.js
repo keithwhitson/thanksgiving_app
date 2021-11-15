@@ -1,14 +1,16 @@
-import React from 'react';
-import { useHistory } from "react-router-dom";
+import React, { useState } from 'react';
+import { useHistory, useLocation } from "react-router-dom";
 
-const WholeRecipe = ({title}) => {
-    console.log(title)
-    let history = useHistory();
+
+const WholeRecipe = () => {
+    let location = useLocation();
+    let state = location.state;
+    let title = state.title;
     return(
-        <>
-        <h1> Recipe </h1>
+        <div>
+        <h1 className="text-center"> Recipe </h1>
         <h2>{title}</h2>
-        </>
+        </div>
     );
 };
 

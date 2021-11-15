@@ -10,13 +10,25 @@ export const Cards = ({image, title, ingredientsList}) => {
     }
 
     return (
-            <Card style={{ width: '20rem', height: '35rem',float: 'left' }} className="ml-auto">
+            <div className="center">
+            <Card style={{ width: '15rem', height: '25rem',float: 'left' }} className="ml-auto cards">
             <Card.Img variant="top" src={image} onError={(event) => event.target.style.display = 'none'}/>
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
-                <Button type="button" onClick={() => handleClick({title})} variant="primary">Show Recipe</Button>
+                <Link to=
+                    {{
+                      pathname: "/wholerecipe",
+                      state: { title: title, 
+                               image: image,
+                               ingredientsList: ingredientsList
+                             }
+                    }} > <Button variant="primary">Show Recipe</Button> 
+                </Link>
+                
             </Card.Body>
-            </Card>  
+            </Card> 
+            </div>
+ 
         );
 }
 

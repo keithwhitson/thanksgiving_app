@@ -30,6 +30,8 @@ hits.map((hitarray, key) =>{
 
 //console.log(labels)
 
+console.log(all_recipes[0])
+
 const Drinks = () => {
     return (
           <div className="stock-container">

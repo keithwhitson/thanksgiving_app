@@ -16,7 +16,7 @@ const starter = all_recipes.filter(recipe => recipe.dishType.includes('starter')
 
 const Starter = () => {
     return (
-          <div className="stock-container center">
+          <div className="stock-container center" >
             <h1 className="text-center">Starters</h1>
             {starter.map((data, key) => {
               return (
