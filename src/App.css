@@ -21,7 +21,7 @@ h1{
   margin-bottom: 3rem;
 }
 
-.dessert-container, .starters-container, .maincourse-container{
+.dessert-container, .starters-container, .maincourse-container,.drinks-container{
   display: grid;
   margin: auto;
   justify-content: center;

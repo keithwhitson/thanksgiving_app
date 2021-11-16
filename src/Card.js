@@ -3,7 +3,7 @@ import { Card, Button, CardGroup, Row } from 'react-bootstrap';
 import WholeRecipe from "./WholeRecipe"
 import { Link, useHistory } from "react-router-dom";
 
-export const Cards = ({image, title, ingredientsList}) => {
+export const Cards = ({image, title, ingredientsList, instructions}) => {
     
     const handleClick = ({title}) => {
         console.log(title)
@@ -20,7 +20,8 @@ export const Cards = ({image, title, ingredientsList}) => {
                       pathname: "/wholerecipe",
                       state: { title: title, 
                                image: image,
-                               ingredientsList: ingredientsList
+                               ingredientsList: ingredientsList,
+                               instructions: instructions
                              }
                     }} > <Button variant="primary">Show Recipe</Button> 
                 </Link>

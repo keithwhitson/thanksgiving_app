@@ -3,13 +3,13 @@ import { useHistory, useLocation } from "react-router-dom";
 
 
 const WholeRecipe = () => {
-    let location = useLocation();
-    let state = location.state;
-    let title = state.title;
+    const location = useLocation()
+    const { instructions, title } = location.state;
     return(
         <div>
         <h1 className="text-center"> Recipe </h1>
         <h2>{title}</h2>
+        <p>{instructions}</p>
         </div>
     );
 };
