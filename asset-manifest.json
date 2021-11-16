@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/thanksgiving_app/static/css/main.4e04ba4e.chunk.css",
-    "main.js": "/thanksgiving_app/static/js/main.665bfb9f.chunk.js",
-    "main.js.map": "/thanksgiving_app/static/js/main.665bfb9f.chunk.js.map",
+    "main.css": "/thanksgiving_app/static/css/main.3dcd498f.chunk.css",
+    "main.js": "/thanksgiving_app/static/js/main.b9e3b960.chunk.js",
+    "main.js.map": "/thanksgiving_app/static/js/main.b9e3b960.chunk.js.map",
     "runtime-main.js": "/thanksgiving_app/static/js/runtime-main.794388a9.js",
     "runtime-main.js.map": "/thanksgiving_app/static/js/runtime-main.794388a9.js.map",
     "static/css/2.0a9ec390.chunk.css": "/thanksgiving_app/static/css/2.0a9ec390.chunk.css",
@@ -10,14 +10,14 @@
     "static/js/2.9a7f08cb.chunk.js.map": "/thanksgiving_app/static/js/2.9a7f08cb.chunk.js.map",
     "index.html": "/thanksgiving_app/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/thanksgiving_app/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.4e04ba4e.chunk.css.map": "/thanksgiving_app/static/css/main.4e04ba4e.chunk.css.map",
+    "static/css/main.3dcd498f.chunk.css.map": "/thanksgiving_app/static/css/main.3dcd498f.chunk.css.map",
     "static/js/2.9a7f08cb.chunk.js.LICENSE.txt": "/thanksgiving_app/static/js/2.9a7f08cb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.794388a9.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.9a7f08cb.chunk.js",
-    "static/css/main.4e04ba4e.chunk.css",
-    "static/js/main.665bfb9f.chunk.js"
+    "static/css/main.3dcd498f.chunk.css",
+    "static/js/main.b9e3b960.chunk.js"
   ]
 }
