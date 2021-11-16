@@ -34,8 +34,8 @@ console.log(all_recipes[0])
 
 const Drinks = () => {
     return (
-          <div className="stock-container">
-            <h1 className="text-center">Drinks</h1>
+          <div className="drinks-container">
+            <h1 className="">Drinks</h1>
             {drink.map((data, key) => {
               return (
                 <div key={key}>

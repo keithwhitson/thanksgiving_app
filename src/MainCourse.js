@@ -1,3 +1,4 @@
+import React from "react";
 import Card from "./Card"
 import RecipeData from "./recipeDataFile"
 
@@ -16,8 +17,10 @@ const maincourse = all_recipes.filter(recipe => recipe.dishType.includes('main c
 
 const MainCourse = () => {
     return (
-          <div className="stock-container center">
-            <h1 className="text-center">Main Course</h1>
+
+      <React.Fragment>
+            <h1 className="">Main Course</h1>
+            <div className="maincourse-container">
             {maincourse.map((data, key) => {
               return (
                 <div key={key}>
@@ -28,6 +31,8 @@ const MainCourse = () => {
               );
             })}
           </div>
+      </React.Fragment>
+
     );
 };
   

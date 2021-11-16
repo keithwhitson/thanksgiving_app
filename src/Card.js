@@ -10,11 +10,11 @@ export const Cards = ({image, title, ingredientsList}) => {
     }
 
     return (
-            <div className="center">
-            <Card style={{ width: '15rem', height: '25rem',float: 'left' }} className="ml-auto cards">
-            <Card.Img variant="top" src={image} onError={(event) => event.target.style.display = 'none'}/>
+            <div>
+            <Card className="">
+            <Card.Img src={image} onError={(event) => event.target.style.display = 'none'}/>
             <Card.Body>
-                <Card.Title>{title}</Card.Title>
+                <Card.Title className="card-title">{title}</Card.Title>
                 <Link to=
                     {{
                       pathname: "/wholerecipe",
