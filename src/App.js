@@ -14,6 +14,7 @@ import Navbar from "./NavBar"
 import WholeRecipe from './WholeRecipe';
 import Recipes from "./Recipes"
 import HeaderImage from "./HeaderImage"
+import WhereAmi from './WhereAmi';
 
 function App() {
   return (
@@ -47,6 +48,9 @@ function App() {
           </Route>
           <Route path="/recipes">
             <Recipes />
+          </Route>
+          <Route path="/where">
+            <WhereAmi />
           </Route>
         </Switch>
       </div>

@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+
+function getYear() {
+    return new Date().getFullYear();
+}
 
 function Home() {
+ 
     return (
         <div>
-            <h1 className="">Home</h1>
-            {/* <img style={{float: 'middle'}} className="center" src="https://upload.wikimedia.org/wikipedia/commons/1/11/RoastTurkey.jpg" alt="turkey picture" width="200" height="" /> */}
+            <h1 className="">Thanksgiving {new Date().getFullYear()}</h1>
+            <img src="https://cdn.pixabay.com/photo/2012/04/01/16/38/turkey-23435_1280.png" className="home-turkey"/>
         </div>
     );
   }
   
-  export default Home
+  export default Home;
