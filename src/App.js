@@ -13,11 +13,13 @@ import Starters from "./Starters"
 import Navbar from "./NavBar"
 import WholeRecipe from './WholeRecipe';
 import Recipes from "./Recipes"
+import HeaderImage from "./HeaderImage"
 
 function App() {
   return (
     <>
     <Router>
+    <HeaderImage />
     <Navbar />
     <div className="App">
       <div className="content">

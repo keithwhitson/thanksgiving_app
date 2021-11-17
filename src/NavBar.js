@@ -2,31 +2,33 @@ import Reach from 'react';
 import { Link } from 'react-router-dom';
 
 const NavBar = () => (
-    <nav className="navbar navbar-light bg-light"> 
+    <>
+    <div className="header-container">
+    <nav> 
     <div class="" id="navbarNav">    
-        <ul class="navbar-nav">
+        <ul class="navbar-nav linked-list">
             <li className="nav-item">
-                <Link to="/" className="nav-link">Home</Link>
+                <Link to="/" className="">Home</Link>
             </li>
-            <li className="nav-item">
-                <Link to="/starters" className="nav-link">Starters</Link>
-            </li>
-
-            <li className="nav-item">
-                <Link to="/desserts" className="nav-link">Desserts</Link>
-            </li>
-            <li className="nav-item">
-                <Link to="/maincourse" className="nav-link">Main Courses</Link>
+            <li className="">
+                <Link to="/starters" className="">Starters</Link>
             </li>
 
-            <li className="nav-item">
-                <Link to="/drinks" className="nav-link">Drinks</Link>
+            <li className="">
+                <Link to="/desserts" className="">Desserts</Link>
+            </li>
+            <li className="">
+                <Link to="/maincourse" className="">Main Courses</Link>
+            </li>
+
+            <li className="">
+                <Link to="/drinks" className="">Drinks</Link>
             </li> 
         </ul>
         </div>
     </nav>
-
-
+    </div>
+    </>
 
 );
 

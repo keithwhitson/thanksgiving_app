@@ -1,4 +1,5 @@
 
+
 h1{
   display: grid;
   margin: auto;
@@ -21,6 +22,20 @@ h1{
   margin-bottom: 3rem;
 }
 
+.header-image-container{
+  background-color: #95AF34;
+}
+
+.header-image{
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 80%;
+  align-self: center;
+  align-content: center;
+  vertical-align: center;
+  margin: auto;
+}
+
 .dessert-container, .starters-container, .maincourse-container,.drinks-container{
   display: grid;
   margin: auto;
@@ -31,4 +46,12 @@ h1{
 
 .card-title{
   height: 4em;
+}
+
+.linked-list li{
+  display: inline;
+}
+
+.navbarNav {
+  display: flex;
 }

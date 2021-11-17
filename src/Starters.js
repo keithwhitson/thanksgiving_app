@@ -23,7 +23,7 @@ const Starter = () => {
               return (
                 <div key={key}>
                   <div className="starters-card">
-                    <Card image={data.image} title={data.label} ingredientsList={data.ingredientsList}/>
+                    <Card image={data.image} title={data.label} ingredientsList={data.ingredientLines}/>
                   </div>
                 </div>
               );
