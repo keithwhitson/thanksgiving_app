@@ -7,9 +7,8 @@ const Ingredients = ({ingredientslist}) => {
         
         ingredientslist.map((data,key) => {
             return(
-            <div id="ingredients-list">
             <p>{data}</p>
-            </div>)
+            )
         })
     );
 }
@@ -18,12 +17,19 @@ const WholeRecipe = () => {
     const location = useLocation()
     const { title, ingredientsList } = location.state;
     return(
-        <div>
+        <>
         <h1 className="text-center"> Recipe </h1>
+        <div >
         <h2>{title}</h2>
         <h4>Ingredients List</h4>
+        <div className="ingredients-lines">
+        
         <Ingredients ingredientslist={ingredientsList}/>
         </div>
+        
+
+        </div>
+        </>
     );
 };
 

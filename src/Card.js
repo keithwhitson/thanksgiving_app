@@ -1,16 +1,22 @@
-import { Card, Button, CardGroup, Row } from 'react-bootstrap';
-import { Link, useHistory } from "react-router-dom";
+import { Card, Button } from 'react-bootstrap';
+import { Link } from "react-router-dom";
+import { useState } from 'react';
 
 export const Cards = ({image, title, ingredientsList, instructions}) => {
-    
-    const handleClick = ({title}) => {
-        console.log(title)
+
+    const handleError = ({event, image}) => {
+        event.target.style.display = 'none';
+        //event.target.parentNode.style.display = 'none';
+        //event.target.parentNode.style.visibility = 'hidden';
+        let elem = event.target.parentNode;
+        let par_elem = event.target.parentNode.parentNode;
+        par_elem.classList.add("remove-completely");
     }
 
     return (
-            <div class>
-            <Card className="">
-            <Card.Img src={image} onError={(event) => event.target.style.display = 'none'}/>
+            <div className="">
+            <Card>
+            <Card.Img src={image} onError={(event) => handleError({event, image})}/>
             <Card.Body>
                 <Card.Title className="card-title">{title}</Card.Title>
                 <Link to=
@@ -21,9 +27,8 @@ export const Cards = ({image, title, ingredientsList, instructions}) => {
                                ingredientsList: ingredientsList,
                                instructions: instructions
                              }
-                    }} > <Button variant="primary">Show Recipe</Button> 
+                    }} > <Button variant="danger">Show Recipe</Button> 
                 </Link>
-                
             </Card.Body>
             </Card> 
             </div>

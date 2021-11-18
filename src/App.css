@@ -1,5 +1,5 @@
 * {
-  font-family: 'Lobster', cursive;
+  /* font-family: 'Lobster', cursive; */
   font-weight: bold;
 }
 
@@ -9,6 +9,37 @@ h1{
   justify-content: center;
   margin-top: 3rem;
   margin-bottom: 3rem;
+  color: #D81900;
+}
+
+h2{
+  display: grid;
+  color: #D81900;
+  align-content: center;
+  vertical-align: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+h4{
+  display: grid;
+  margin: auto;
+  color: #D81900;
+  align-content: center;
+  vertical-align: center;
+  justify-content: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.ingredients-lines{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4rem;
+}
+
+.ingredients-lines p {
+  grid-column: 2 / 5;
 }
 
 .center{
@@ -63,7 +94,6 @@ h1{
   display: inline;
   padding-right: 0.6rem;
   font-size: 1.2rem;
-
 }
 
 .navbarNav {
@@ -89,6 +119,12 @@ h1{
   text-align: left;
 }
 
+.remove-completely{
+  /* visibility: hidden; */
+  /* height: 0px;
+  width: 0px; */
+}
+
 .NavbarItems a{
   text-decoration: none;
   color: #95AF34;
@@ -111,7 +147,9 @@ h1{
   grid-template-columns:  1fr;
 }
 
-
+.card-title{
+  color:#244C12;
+}
 
 
 @media only screen and (max-width:850px) {
@@ -122,7 +160,7 @@ h1{
 
 }
 
-@media only screen and (max-width:655px) {
+@media only screen and (max-width:808px) {
   .toggleButton {
     display: flex;
     margin-top: 1rem;
@@ -136,13 +174,27 @@ h1{
     top: 5px;
     position:relative;
     padding-top: 10px;
-    display: inline-flex;
-    width: 100%;
+    display: grid;
+    width: 8rem;
     max-height: 230px;
     flex-direction: column;
     align-items: center;
+    align-content: center;
+    grid-template-columns: 1fr 5fr;
+    background-color:#FFAD18;
+    z-index: 1;
   }
 
+  #hidden .links a {
+    color:#244C12;
+  }
 
+  #menu-links{
+    padding-top: 1.2rem;
+  }
 
+  #burger{
+    margin-top: 1.5rem;
+  }
+ 
 }
