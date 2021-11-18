@@ -1,6 +1,4 @@
-import RecipeData from "./recipeDataFile"
 import { Card, Button, CardGroup, Row } from 'react-bootstrap';
-import WholeRecipe from "./WholeRecipe"
 import { Link, useHistory } from "react-router-dom";
 
 export const Cards = ({image, title, ingredientsList, instructions}) => {
@@ -10,7 +8,7 @@ export const Cards = ({image, title, ingredientsList, instructions}) => {
     }
 
     return (
-            <div>
+            <div class>
             <Card className="">
             <Card.Img src={image} onError={(event) => event.target.style.display = 'none'}/>
             <Card.Body>

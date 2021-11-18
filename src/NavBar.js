@@ -7,7 +7,9 @@ const NavBar = () => {
     <>
     <div className="header-container">
     <nav className="NavbarItems"> 
+    <button className="toggleButton" onClick={() => setShowLinks(!showLinks)}>Open</button>
     <div  id="">    
+    
         <ul class="linked-list" id={showLinks ? "hidden" : ""}>
             <li className="links">
                 <Link to="/" className="">Home</Link>
@@ -26,10 +28,9 @@ const NavBar = () => {
             <li className="links">
                 <Link to="/drinks" className="">Drinks</Link>
             </li> 
-            <li className="">
-                <button onClick={() => setShowLinks(!showLinks)}>Open</button>
-            </li> 
+
         </ul>
+                
         </div>
     </nav>
     </div>
