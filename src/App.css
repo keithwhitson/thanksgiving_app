@@ -55,6 +55,7 @@ h1{
   display: inline;
   padding-right: 0.6rem;
   font-size: 1.2rem;
+
 }
 
 .navbarNav {
@@ -83,4 +84,43 @@ h1{
 .NavbarItems a{
   text-decoration: none;
   color: #95AF34;
+}
+
+.linked-list li button {
+  display: none;
+}
+
+#hidden li a {
+  display: flex;
+}
+
+.linked-list {
+  margin-top: 1.2rem;
+}
+
+
+@media only screen and (max-width:850px) {
+  
+}
+
+@media only screen and (max-width:750px) {
+  
+}
+
+@media only screen and (max-width:650px) {
+  .linked-list li button {
+    display: flex;
+    align-content: right;
+    grid-column: 2 / 3;
+    margin-top: 2.7rem;
+  }
+
+  .linked-list .links{
+    display: none;
+  }
+
+  #hidden .links{ 
+    display: flex;
+  }
+
 }
