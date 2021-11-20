@@ -159,6 +159,21 @@ h4{
   top: 0;
 } */
 
+.home-headline{
+  margin-top: 24px;
+  margin-bottom: 19px;
+}
+
+.thanksgiving-history{
+  font-size: 12px;
+  margin: 3rem;
+}
+
+.wiki-credit{
+  font-size: 8px;
+  margin: 3rem;
+}
+
 @media only screen and (max-width:850px) {
   
 }
