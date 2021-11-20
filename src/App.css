@@ -32,7 +32,7 @@ h4{
   padding-bottom: 2rem;
 }
 
-.ingredients-lines{
+/* .ingredients-lines{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 4rem;
@@ -40,7 +40,7 @@ h4{
 
 .ingredients-lines p {
   grid-column: 2 / 5;
-}
+} */
 
 .center{
   text-align: center;
@@ -130,6 +130,7 @@ h4{
 .NavbarItems a{
   text-decoration: none;
   color: #95AF34;
+  padding-left: 10px;
 }
 
 .toggleButton  {
@@ -177,7 +178,7 @@ h4{
   }
 
   #hidden .links{ 
-    top: 5px;
+    top: -5px;
     position:relative;
     padding-top: 10px;
     display: grid;
@@ -189,6 +190,8 @@ h4{
     grid-template-columns: 1fr 5fr;
     background-color:#FFAD18;
     z-index: 1;
+    margin-left: -32px;
+    margin-top: -5px;
   }
 
   #hidden .links a {

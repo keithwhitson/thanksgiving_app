@@ -15,18 +15,18 @@ const NavBar = () => {
                 <Link to="/thanksgiving_app" className="">Home</Link>
             </li>
             <li className="links">
-                <Link to="/starters" className="">Starters</Link>
+                <Link to="/thanksgiving_app/starters" className="">Starters</Link>
+            </li> 
+
+            <li className="links">
+                <Link to="/thanksgiving_app/desserts" className="">Desserts</Link>
+            </li>
+            <li className="links">
+                <Link to="/thanksgiving_app/maincourse" className="">Main Courses</Link>
             </li>
 
             <li className="links">
-                <Link to="/desserts" className="">Desserts</Link>
-            </li>
-            <li className="links">
-                <Link to="/maincourse" className="">Main Courses</Link>
-            </li>
-
-            <li className="links">
-                <Link to="/drinks" className="">Drinks</Link>
+                <Link to="/thanksgiving_app/drinks" className="">Drinks</Link>
             </li> 
 
         </ul>

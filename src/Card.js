@@ -20,7 +20,7 @@ export const Cards = ({image, title, ingredientsList, instructions}) => {
                 <Card.Title className="card-title">{title}</Card.Title>
                 <Link to=
                     {{
-                      pathname: "/wholerecipe",
+                      pathname: "/thanksgiving_app/wholerecipe",
                       state: { title: title, 
                                image: image,
                                ingredientsList: ingredientsList,

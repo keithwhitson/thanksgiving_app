@@ -27,31 +27,31 @@ function App() {
     <div className="App">
       <div className="content">
         <Switch>
-          <Route path="/thanksgiving_app">
+          <Route exact path="/thanksgiving_app">
             <Home />
           </Route>
-          <Route path="/desserts">
+          <Route path="/thanksgiving_app/desserts">
             <Desserts />
           </Route>
           <Route exact path="/hello">
             <Hello />
           </Route>
-          <Route path="/drinks">
+          <Route path="/thanksgiving_app/drinks">
             <Drinks />
           </Route>
-          <Route path="/maincourse">
+          <Route path="/thanksgiving_app/maincourse">
             <MainCourse />
           </Route>
-          <Route path="/starters">
+          <Route path="/thanksgiving_app/starters">
             <Starters />
           </Route>
-          <Route path="/wholerecipe">
+          <Route path="/thanksgiving_app/wholerecipe">
             <WholeRecipe />
           </Route>
-          <Route path="/recipes">
+          <Route path="/thanksgiving_app/recipes">
             <Recipes />
           </Route>
-          <Route path="/where">
+          <Route path="/thanksgiving_app/where">
             <WhereAmi />
           </Route>
         </Switch>
