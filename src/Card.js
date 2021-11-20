@@ -1,6 +1,5 @@
 import { Card, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
-import { useState } from 'react';
 
 export const Cards = ({image, title, ingredientsList, instructions}) => {
 
@@ -8,9 +7,9 @@ export const Cards = ({image, title, ingredientsList, instructions}) => {
         event.target.style.display = 'none';
         //event.target.parentNode.style.display = 'none';
         //event.target.parentNode.style.visibility = 'hidden';
-        let elem = event.target.parentNode;
-        let par_elem = event.target.parentNode.parentNode;
-        par_elem.classList.add("remove-completely");
+        //let elem = event.target.parentNode;
+        //let par_elem = event.target.parentNode.parentNode;
+        //par_elem.classList.add("remove-completely");
     }
 
     return (

@@ -107,7 +107,7 @@ h4{
 }
 
 .NavbarItems{
-  height: 80px;
+  height: 40px;
   display:grid;
   justify-content: left;
   align-items: center;
@@ -117,6 +117,8 @@ h4{
   border-bottom: 5px solid #D21101;
   align-content: left;
   text-align: left;
+  margin-top: -58px;
+  padding: -5px;
 }
 
 .remove-completely{
@@ -139,7 +141,7 @@ h4{
 }
 
 .linked-list {
-  margin-top: 1.2rem;
+  margin-top: .1rem;
 }
 
 .header-container {
@@ -151,6 +153,10 @@ h4{
   color:#244C12;
 }
 
+/* #nav-head{
+  position: sticky;
+  top: 0;
+} */
 
 @media only screen and (max-width:850px) {
   
@@ -194,7 +200,7 @@ h4{
   }
 
   #burger{
-    margin-top: 1.5rem;
+    margin-top: 0.4rem;
   }
  
 }

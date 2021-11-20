@@ -6,14 +6,13 @@ const NavBar = () => {
     const [showLinks, setShowLinks] = useState(false);
     return(
     <>
-    
     <div className="header-container">
     <nav className="NavbarItems"> 
     <MdReorder id="burger" className="toggleButton" onClick={() => setShowLinks(!showLinks)}/>
     <div id="menu-links">    
         <ul class="linked-list" id={showLinks ? "hidden" : ""}>
             <li className="links">
-                <Link to="/" className="">Home</Link>
+                <Link to="/thanksgiving_app" className="">Home</Link>
             </li>
             <li className="links">
                 <Link to="/starters" className="">Starters</Link>

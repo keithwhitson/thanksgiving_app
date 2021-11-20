@@ -20,12 +20,14 @@ function App() {
   return (
     <>
     <Router>
+    <div id="nav-head">
     <HeaderImage />
     <Navbar />
+    </div>
     <div className="App">
       <div className="content">
         <Switch>
-          <Route exact path="/">
+          <Route path="/thanksgiving_app">
             <Home />
           </Route>
           <Route path="/desserts">

@@ -5,11 +5,11 @@ import RecipeData from "./recipeDataFile"
 const hits = RecipeData.map((data) => data.hits);
 var all_recipes = []
 
-hits.map((hitarray, key) =>{
-  hitarray.map((data, key) => {
+hits.map((hitarray, key) =>(
+  hitarray.map((data, key) => (
     all_recipes.push(data.recipe)
-  })
-})
+))
+))
 
 all_recipes = all_recipes.filter((item,index) => item.dishType)
 
