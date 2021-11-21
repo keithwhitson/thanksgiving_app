@@ -71,11 +71,22 @@ h4{
 }
 
 .card-title{
-  font-size: 95%;
+  height: 3.5em;
+  color:#244C12;
+  font-size: .7rem;
 }
 
+
+
+
 .card {
-  height: 23rem;
+  height: 21.5rem;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+  padding: 0.25rem 3.5rem;
+  font-size: .875rem;
+  border-radius: 0.2rem;
 }
 
 .dessert-container, .starters-container, .maincourse-container,.drinks-container{
@@ -86,9 +97,6 @@ h4{
   grid-gap: 1em;
 }
 
-.card-title{
-  height: 3.5em;
-}
 
 .linked-list li{
   display: inline;
@@ -150,9 +158,7 @@ h4{
   grid-template-columns:  1fr;
 }
 
-.card-title{
-  color:#244C12;
-}
+
 
 /* #nav-head{
   position: sticky;

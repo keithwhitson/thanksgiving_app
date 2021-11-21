@@ -26,7 +26,7 @@ export const Cards = ({image, title, ingredientsList, instructions}) => {
                                ingredientsList: ingredientsList,
                                instructions: instructions
                              }
-                    }} > <Button variant="danger">Show Recipe</Button> 
+                    }} > <Button className="" variant="danger" size="sm" type="button">Show Recipe</Button> 
                 </Link>
             </Card.Body>
             </Card> 
